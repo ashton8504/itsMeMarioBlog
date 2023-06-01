@@ -36,6 +36,10 @@
     width: 100%;
     margin-top: 15px;
   }
+
+  nav > * {
+    margin-right: 50px; /* Adjust the margin value as needed */
+  }
   
   .navbar-left {
     display: flex;
@@ -98,9 +102,9 @@
 
 /* HERO SECTION STYLES */
 
-.image-section {
+/* .image-section {
     position: relative;
-  }
+  } */
   
   .image {
     width: 100%;
@@ -138,7 +142,7 @@
   }
   
   .marioLink {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.5);
   }
