@@ -268,24 +268,50 @@
     color: #505050;
 }
 
-  /* Responsive styles */
-  @media (max-width: 1024px) {
+/* Responsive styles */
+@media (max-width: 1024px) {
     .flex-container {
-      justify-content: flex-start;
+      justify-content: center;
     }
     
     .blog-post {
       width: calc(50% - 20px);
+      align-items: center;
+      text-align: center;
+    }
+    
+    .blog-image {
+      width: 80%; /* Adjust the width as needed */
+      margin: 0 auto;
+    }
+
+  
+    .blog-date,
+    .blog-title,
+    .blog-paragraph {
+      text-align: center;
     }
   }
   
   @media (max-width: 768px) {
     .flex-container {
-      justify-content: flex-start;
+      justify-content: center;
     }
     
     .blog-post {
       width: calc(100% - 20px);
+      align-items: center;
+      text-align: center;
+    }
+    
+    .blog-image {
+      width: 80%; /* Adjust the width as needed */
+    }
+    
+    .blog-date,
+    .blog-title,
+    .blog-paragraph {
+      text-align: center;
     }
   }
   
