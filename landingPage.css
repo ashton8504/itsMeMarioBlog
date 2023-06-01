@@ -37,6 +37,10 @@
     margin-top: 15px;
   }
 
+  .navbar-right ul li:not(:last-child) {
+    margin-right: 15px;
+  }
+
   nav > * {
     margin-right: 50px; /* Adjust the margin value as needed */
   }
