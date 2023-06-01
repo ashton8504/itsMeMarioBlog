@@ -169,6 +169,73 @@
     line-height: 20px;
     color: #151515;
   }
+
+  /* FLEXBOX CONTAINERS  */
+
+  .recent-posts {
+    font-family: "retroFont", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .recent-posts-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  
+  .post {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .post img {
+    width: 100%;
+    height: 300px; /* Adjust the desired height */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+  
+  .post-info {
+    text-align: center;
+  }
+  
+  .post-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "retroFont", sans-serif;
+    font-size: 24px;
+    line-height: 108.2%;
+    color: #141414;
+  }
+  
+  .post-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #505050;
+  }
+  
   
   /* Footer styles */
   footer {
