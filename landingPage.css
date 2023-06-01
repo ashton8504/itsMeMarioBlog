@@ -137,6 +137,17 @@
     margin: 0;
   }
   
+  .marioLink {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.5);
+  }
+  
+  .marioLink:hover {
+    color: #E61A23;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+  }
   .heroParagraph {
     font-size: 1.2rem;
     color: white;
