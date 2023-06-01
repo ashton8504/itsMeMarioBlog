@@ -296,15 +296,14 @@ footer {
   }
   
   .footer-image {
-    width: 450px; 
+    width: 100%;
+    max-width: 450px;
     border-radius: 4px;
     margin-bottom: 20px;
     filter: grayscale(10%);
+    transition: filter 0.3s; /* Add transition for smooth effect */
   }
   
-.footer-text {
-    flex-grow: 1;
-  }
  
 .footer-paragraph {
     font-size: 1rem;
