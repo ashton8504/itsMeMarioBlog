@@ -216,6 +216,7 @@
     line-height: 18px;
     font-family: "retroFont", sans-serif;
     font-weight: bold;
+    text-align: center;
   }
   
   .blog-title {
@@ -226,6 +227,7 @@
     font-size: 24px;
     line-height: 108.2%;
     color: #141414;
+    text-align: center;
   }
   
   .blog-paragraph {
@@ -250,8 +252,6 @@
     /* Add any additional hover styles you want */
   }
   
-  
-
 /* Footer Styles */
 footer {
     border-top: 4px solid black;
