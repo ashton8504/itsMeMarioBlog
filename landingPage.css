@@ -268,8 +268,88 @@
     color: #505050;
 }
 
-/* Responsive styles */
-@media (max-width: 1024px) {
+  .blog-title a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .blog-title a:hover {
+    color: #E61A23;
+    /* Add any additional hover styles you want */
+  }
+  
+
+/* Footer Styles */
+footer {
+    border-top: 4px solid black;
+    background-color: #333; /* Update the background color to a darker shade */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Set the text color to white */
+  }
+  
+  
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Change the layout to column */
+    align-items: center;
+  }
+  
+  .footer-image {
+    width: 450px; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+    filter: grayscale(10%);
+  }
+  
+.footer-text {
+    flex-grow: 1;
+  }
+ 
+.footer-paragraph {
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "retroFont", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow with an offset of 2px horizontally and vertically, blur radius of 4px, and opacity of 0.5 */
+
+}
+  
+  .footer-bottom {
+    margin-top: 10px;
+  }
+  
+  .footer-bottom-text {
+    font-size: 0.8rem; /* Use rem units for responsive font size */
+    color: #999;
+  }
+  
+  
+  
+  /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
+  
+  @media (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    .navbar-left {
+      display: none;
+    }
+  }
+  
+  /* MOBILE FRIENDLY STYLES FOR FLEXBOX SECTION */
+  @media (max-width: 1024px) {
     .flex-container {
       justify-content: center;
     }
@@ -315,34 +395,11 @@
     }
   }
 
-  .blog-title a {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .blog-title a:hover {
-    color: #E61A23;
-    /* Add any additional hover styles you want */
-  }
-  
-  
-  /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
-  
+  /* STYLE FOR MOBILE FOR THE FOOTER IMAGE */
+
   @media (max-width: 767px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar-links {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 10px;
-    }
-  
-    .navbar-left {
-      display: none;
+    .footer-image {
+      width: 100%;
+      max-width: 100%;
     }
   }
-  
