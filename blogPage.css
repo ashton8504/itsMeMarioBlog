@@ -85,6 +85,13 @@ body{
     font-family: "marioImages", sans-serif;
     font-size: 35px;
   }
+
+  /* ANIMATIONS FOR NAVBAR LINKS */
+
+.homeTabFont:hover, .aboutMeFont:hover{
+    color: #E61A23; 
+    transition: color 0.3s ease-in-out;
+  }
   
   /* Blogpost styles */
   main {
@@ -92,7 +99,6 @@ body{
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +116,8 @@ body{
   p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
-    color: #333;
+    color: #000000;
+    font-weight: bold;
     line-height: 1.6;
     text-align: center;
   }
@@ -122,6 +129,7 @@ body{
     border: 2px solid black;
     padding: 10px 20px;
     border-radius: 5px;
+    background-color: #E61A23;
   }
   
   article:hover {
