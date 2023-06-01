@@ -172,67 +172,40 @@
     letter-spacing: 1px;
     font-weight: bold;
   }
-  
-
-/* FLEXBOX SECTION STYLES */
-
-.flexBoxTitle {
-    font-family: "marioFont", sans-serif;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-    font-size: 35px;
-    text-align: center;
-    color: #E61A23;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-  
-/* FLEXBOX SECTION STYLES */
-
-.flexBoxTitle {
-    font-family: "marioFont", sans-serif;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-    font-size: 35px;
-    text-align: center;
-    color: #E61A23;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-  
-/* Flexbox container for the blog posts */
-.flex-container {
+    
+  .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start; /* Align items to start vertically */
     padding-top: 15px;
     padding-left: 15px;
-}
-
-/* Individual blog post */
-.blog-post {
+  }
+  
+  .blog-post {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Align items to stretch vertically */
-    text-align: left;
+    align-items: center; /* Align items to center horizontally */
+    text-align: center;
     padding: 20px;
     box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Blog post image */
-.blog-image img {
-    width: 35%;
+  }
+  
+  .blog-image img {
+    width: 100%;
     height: auto;
-    object-fit: cover;
+    max-height: 200px; /* Set a maximum height for the images */
+    object-fit: contain; /* Use "contain" instead of "cover" to preserve aspect ratio */
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: block;
-    /* margin-left: auto; */
+    margin-left: auto;
     margin-right: auto;
   }
   
-/* Blog post date */
-.blog-date {
+  .blog-date {
     margin-top: 10px;
     font-size: 14px;
     color: #141414;
@@ -240,10 +213,9 @@
     line-height: 18px;
     font-family: "retroFont", sans-serif;
     font-weight: bold;
-}
-
-/* Blog post title */
-.blog-title {
+  }
+  
+  .blog-title {
     margin-top: 10px;
     font-weight: bold;
     text-align: left;
@@ -251,10 +223,9 @@
     font-size: 24px;
     line-height: 108.2%;
     color: #141414;
-}
-
-/* Blog post paragraph */
-.blog-paragraph {
+  }
+  
+  .blog-paragraph {
     margin-top: 10px;
     font-size: 1.2rem;
     color: #333;
@@ -264,8 +235,8 @@
     font-size: 16px;
     line-height: 125%;
     color: #505050;
-}
-
+  }
+  
   .blog-title a {
     color: #000000;
     text-decoration: none;
@@ -275,6 +246,8 @@
     color: #E61A23;
     /* Add any additional hover styles you want */
   }
+  
+  
   
 
 /* Footer Styles */
