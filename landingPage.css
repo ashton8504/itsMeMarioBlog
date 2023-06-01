@@ -314,6 +314,16 @@
       text-align: center;
     }
   }
+
+  .blog-title a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .blog-title a:hover {
+    color: #E61A23;
+    /* Add any additional hover styles you want */
+  }
   
   
   /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
