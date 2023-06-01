@@ -34,7 +34,7 @@
     padding: 0 20px;
     border-bottom: 4px solid black;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   
   .navbar-left {
@@ -77,12 +77,13 @@
   .homeTabFont, .aboutMeFont {
     font-family: "retroFont", sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-    font-size: 18px;
+    font-size: 25px;
   }
   
   
   .navbarCenterFont{
     font-family: "marioImages", sans-serif;
+    font-size: 35px;
   }
 
 /* ANIMATIONS FOR NAVBAR LINKS */
@@ -97,20 +98,34 @@
 
 /* HERO SECTION STYLES */
 
-.image {
+.image-section {
+    position: relative;
+  }
+  
+  .image {
     width: 100%;
     height: 700px;
     background: url("images/marioMainImage.jpeg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    filter: grayscale(40%);
   }
   
-  .heroTitle {
+  .content {
     position: absolute;
     bottom: 5%;
     left: 5%;
     transform: translate(-5%, -5%);
+  }
+  
+  .text-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.3em 0.5em;
+    border-radius: 8px;
+  }
+  
+  .heroTitle {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 700;
@@ -119,9 +134,22 @@
     letter-spacing: -0.03em;
     color: white;
     text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0.3em 0.5em;
-    border-radius: 8px;
+    margin: 0;
   }
+  
+  .heroParagraph {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    width: 60%;
+    
+    height: auto;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    line-height: 20px;
+  }
+  
+  
   
   
