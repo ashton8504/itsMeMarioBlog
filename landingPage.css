@@ -38,7 +38,7 @@
   }
 
   .navbar-right ul li:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 2px;
   }
 
   nav > * {
@@ -106,9 +106,9 @@
 
 /* HERO SECTION STYLES */
 
-/* .image-section {
+ .image-section {
     position: relative;
-  } */
+  } 
   
   .image {
     width: 100%;
@@ -131,6 +131,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0.3em 0.5em;
     border-radius: 8px;
+    width: 85%;
   }
   
   .heroTitle {
@@ -325,6 +326,8 @@ footer {
     .navbar-right ul li {
       margin-bottom: 10px;
     }
+
+    
   }
   
   /* MOBILE FRIENDLY STYLES FOR FLEXBOX SECTION */

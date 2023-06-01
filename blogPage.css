@@ -40,7 +40,7 @@ nav {
   }
 
   .navbar-right ul li:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 25px;
   }
 
   nav > * {
