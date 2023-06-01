@@ -329,34 +329,23 @@ footer {
   
   /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
   @media (max-width: 767px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
+    
     .navbar-middle,
     .navbar-left {
       display: none;
     }
-  
+
     .navbar-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-    }
-  
-    .navbar-right ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Center the items */
+        margin-top: 10px;
+      }
+    
     .navbar-right ul li {
       margin-bottom: 10px;
     }
   }
-  
   
   /* MOBILE FRIENDLY STYLES FOR FLEXBOX SECTION */
   @media (max-width: 1024px) {
