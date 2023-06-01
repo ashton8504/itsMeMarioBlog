@@ -255,8 +255,8 @@
   
   .footer-image {
     width: 100%;
-    max-width: 450px;
-    border-radius: 4px;
+    max-width: 250px;
+    border-radius: 8px;
     margin-bottom: 20px;
     filter: grayscale(10%);
     transition: filter 0.3s;
