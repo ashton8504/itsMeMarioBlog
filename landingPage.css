@@ -38,7 +38,7 @@
   }
 
   .navbar-right ul li:not(:last-child) {
-    margin-right: 2px;
+    margin-right: 25px;
   }
 
   nav > * {
@@ -310,81 +310,82 @@ footer {
     color: #999;
   }
   
-  
-  
-  /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
-  @media (max-width: 767px) {
+/* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
+@media (max-width: 767px) {
     .navbar-middle,
     .navbar-left {
       display: none;
     }
-
+  
     .navbar-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Center the items */
-        margin-top: 10px;
-      }
-    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
     .navbar-right ul li {
       margin-bottom: 10px;
     }
-
-    
-  }
   
-  /* MOBILE FRIENDLY STYLES FOR FLEXBOX SECTION */
-  @media (max-width: 1024px) {
+    .navbar-left h1 {
+      font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+  
+    .heroTitle {
+      font-size: 1.8rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .heroParagraph {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+      width: 80%; /* Increase the width to make it more readable on smaller screens */
+      margin-top: 20px; /* Add some extra margin for better spacing */
+    }
+  
     .flex-container {
-      justify-content: center;
+      padding-left: 5px; /* Adjust the padding for better spacing */
+      padding-right: 5px;
     }
-    
-    .blog-post {
-      width: calc(50% - 20px);
-      align-items: center;
-      text-align: center;
-    }
-    
-    .blog-image {
-      width: 80%; /* Adjust the width as needed */
-      margin: 0 auto;
-    }
-
   
-    .blog-date,
-    .blog-title,
-    .blog-paragraph {
-      text-align: center;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .flex-container {
-      justify-content: center;
-    }
-    
     .blog-post {
-      width: calc(100% - 20px);
-      align-items: center;
-      text-align: center;
+      width: 100%; /* Make the blog posts occupy full width on smaller screens */
+      max-width: 400px; /* Limit the maximum width for better readability */
+      margin-bottom: 20px;
+      padding: 10px; /* Adjust the padding for better spacing */
     }
-    
-    .blog-image {
-      width: 80%; /* Adjust the width as needed */
+  
+    .blog-date {
+      text-align: center; /* Center align the date on smaller screens */
     }
-    
-    .blog-date,
-    .blog-title,
+  
+    .blog-title {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+  
     .blog-paragraph {
-      text-align: center;
+      font-size: 14px; /* Adjust the font size for smaller screens */
     }
-  }
-
-  /* STYLE FOR MOBILE FOR THE FOOTER IMAGE */
-
-  @media (max-width: 767px) {
+  
+    .footer-content {
+      padding-bottom: 20px; /* Add some extra padding at the bottom for better spacing */
+    }
+  
+    .footer-paragraph {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+      max-width: 400px; /* Limit the maximum width for better readability */
+    }
+  
     .footer-image {
-      width: 100%;
-      max-width: 100%;
+      max-width: 100%; /* Make the image occupy full width on smaller screens */
     }
+  
+    .footer-bottom-text {
+      font-size: 0.7rem; /* Adjust the font size for smaller screens */
+    }
+
+    .text-section {
+        display: none; /* Hide the text section on mobile devices */
+      }
   }
+  
