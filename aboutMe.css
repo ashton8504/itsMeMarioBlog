@@ -1,12 +1,11 @@
-
 /* Global styles */
 * {
     box-sizing: border-box;
   }
-
-body{
-    margin: 0;;
-}
+  
+  body {
+    margin: 0;
+  }
   
   /* Custom Fonts */
   @font-face {
@@ -23,7 +22,6 @@ body{
     font-family: "marioImages";
     src: url("customFonts/marioImages.ttf");
   }
-  
   
   /* NAVBAR STYLING */
   
@@ -74,28 +72,104 @@ body{
     font-size: 29px;
   }
   
-  
-  .homeTabFont, .aboutMeFont {
+  .homeTabFont,
+  .aboutMeFont {
     font-family: "retroFont", sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-size: 25px;
   }
   
-  
-  .navbarCenterFont{
+  .navbarCenterFont {
     font-family: "marioImages", sans-serif;
     font-size: 35px;
   }
-
+  
   /* ANIMATIONS FOR NAVBAR LINKS */
-
-.homeTabFont:hover, .aboutMeFont:hover{
-    color: #E61A23; 
+  
+  .homeTabFont:hover,
+  .aboutMeFont:hover {
+    color: #e61a23;
     transition: color 0.3s ease-in-out;
   }
-
-
-
+  
+  /* STYLES FOR MAIN SECTION */
+  
+  .about-me {
+    display: flex;
+    padding: 6rem;
+    /* Adjust the padding value as needed */
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .about-me {
+      padding: 3rem;
+      /* Adjust the padding value for smaller screens */
+    }
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .about-me-header {
+    font-family: 'retroFont', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: #151515;
+    margin-bottom: 5px;
+    /* Adjust this value as needed */
+  }
+  
+  .about-me-intro {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #151515;
+  }
+  
+  .section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+  }
+  
+  .section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .commitment-header,
+  .start-header {
+    font-family: 'retroFont', sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: #151515;
+    margin-bottom: 5px;
+    /* Adjust this value as needed */
+  }
+  
+  .commitment-paragraph,
+  .start-paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #151515;
+  }
+  
   /* Footer styles */
   footer {
     border-top: 4px solid black;
@@ -139,29 +213,56 @@ body{
     font-size: 0.8rem;
     color: #999;
   }
-
-
-
-
-
-
+  
 /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
 @media (max-width: 767px) {
-    
     .navbar-middle,
     .navbar-left {
       display: none;
     }
-
+    
     .navbar-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Center the items */
-        margin-top: 10px;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Center the items */
+      margin-top: 10px;
+    }
     
     .navbar-right ul li {
       margin-bottom: 10px;
+    }
+    
+    .about-me {
+      padding: 3rem; /* Adjust the padding value for smaller screens */
+      margin-bottom: 0; /* Remove the negative margin */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px; /* Add spacing between sections */
+    }
+    
+    .about-me-content {
+      margin-left: 0; /* Remove the left margin */
+    }
+    
+    .section {
+      width: 100%;
+      max-width: 100%; /* Adjust the maximum width as needed */
+      margin: 0 auto;
+      text-align: left; /* Reset the text alignment */
+      padding: 20px; /* Add padding around the section */
+    }
+    
+    .commitment-header,
+    .start-header {
+      text-align: center; /* Center the headers */
+      margin-bottom: 10px; /* Adjust the margin as needed */
+    }
+    
+    .commitment-paragraph,
+    .start-paragraph {
+      text-align: left; /* Reset the text alignment */
     }
   }
   

@@ -329,7 +329,6 @@ footer {
   
   /* MOBILE FRIENDLY CSS TO MAKE RESPONSIVE */
   @media (max-width: 767px) {
-    
     .navbar-middle,
     .navbar-left {
       display: none;
