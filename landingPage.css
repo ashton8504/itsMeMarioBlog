@@ -420,8 +420,8 @@ footer {
       font-size: 0.6rem;
     }
 
-    .heroParagraph,.heroTitle {
-        display: none !important;
+    .text-section {
+        display: none;
       }
       
   }
