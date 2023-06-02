@@ -1,5 +1,3 @@
-// JS for Gifs hovering
-
 document.addEventListener('DOMContentLoaded', () => {
     const blogPosts = document.querySelectorAll('.blog-post');
   
@@ -10,13 +8,25 @@ document.addEventListener('DOMContentLoaded', () => {
   
       imgElement.dataset.originalSrc = imgElement.src;
   
-      blogImage.addEventListener('mouseenter', () => {
-        imgElement.src = hoverGif;
-      });
+      const isTouchDevice = ('ontouchstart' in window || navigator.msMaxTouchPoints);
   
-      blogImage.addEventListener('mouseleave', () => {
-        imgElement.src = imgElement.dataset.originalSrc;
-      });
+      if (isTouchDevice) {
+        blogImage.addEventListener('touchstart', () => {
+          imgElement.src = hoverGif;
+        });
+  
+        blogImage.addEventListener('touchend', () => {
+          imgElement.src = imgElement.dataset.originalSrc;
+        });
+      } else {
+        blogImage.addEventListener('mouseenter', () => {
+          imgElement.src = hoverGif;
+        });
+  
+        blogImage.addEventListener('mouseleave', () => {
+          imgElement.src = imgElement.dataset.originalSrc;
+        });
+      }
     });
   });
   
