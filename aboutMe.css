@@ -33,7 +33,8 @@
     padding: 0 20px;
     border-bottom: 4px solid black;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-bottom: 20px;
   }
 
   .navbar-right ul li:not(:last-child) {
@@ -43,7 +44,6 @@
   nav > * {
     margin-right: 50px; /* Adjust the margin value as needed */
   }
-  
   
   .navbar-left {
     display: flex;
@@ -78,17 +78,18 @@
   .navbarMarioFont {
     font-family: "marioFont", sans-serif;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-    font-size: 29px;
+    font-size: 38px;
   }
   
-  .homeTabFont,
-  .aboutMeFont {
+  
+  .homeTabFont, .aboutMeFont {
     font-family: "retroFont", sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    font-size: 33px;
   }
   
-  .navbarCenterFont {
+  
+  .navbarCenterFont{
     font-family: "marioImages", sans-serif;
     font-size: 35px;
   }

@@ -35,6 +35,7 @@
     border-bottom: 4px solid black;
     width: 100%;
     margin-top: 25px;
+    padding-bottom: 20px;
   }
 
   .navbar-right ul li:not(:last-child) {
@@ -323,7 +324,8 @@ footer {
         align-items: center;
         padding: 10px;
         border-bottom: 4px solid black;
-       
+        background-color: #333333;
+        margin: 0 auto;
       }
       
       .navbar-left {
@@ -337,7 +339,7 @@ footer {
       
       .navbar-right ul li a {
         text-decoration: none;
-        color: #333;
+        color: whitesmoke;
       }
       
       .navbarMarioFont {
@@ -349,6 +351,7 @@ footer {
       .homeTabFont, .aboutMeFont {
         font-size: 80px;
         text-align: center;
+    
       }
       
       .navbarCenterFont {
