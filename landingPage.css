@@ -211,6 +211,7 @@
     height: auto;
     max-height: 200px; /* Set a maximum height for the images */
     margin-bottom: 10px;
+    cursor: pointer;
   }
   
   .blog-image img {
@@ -219,6 +220,7 @@
     object-fit: contain; /* Use "contain" instead of "cover" to preserve aspect ratio */
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   
   .blog-date {
@@ -269,6 +271,7 @@
   .blog-image {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   
   .blog-image::after {
@@ -284,6 +287,7 @@
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease;
+    cursor: pointer;
   }
   
   .blog-image:hover::after {
