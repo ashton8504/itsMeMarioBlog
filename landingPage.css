@@ -322,7 +322,7 @@ footer {
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding-left: 65px;
         border-bottom: 4px solid black;
         background-color: #333333;
         margin: 0 auto;
