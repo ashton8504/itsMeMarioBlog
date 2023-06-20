@@ -1,7 +1,5 @@
 # Mario's Blog
 
-![Mario's Blog](link-to-your-project-screenshot.png)
-
 Welcome to Mario's Blog! This project, affectionately named after the iconic catchphrase of our beloved plumber hero, is a solo endeavor undertaken as part of the Scrimba Frontend Career Path. Through this project, I delved into the realm of responsive design, crafting websites that adapt seamlessly across various devices. Mario's Blog is a testament to my passion for the Mario franchise, built with a combination of HTML, CSS, and an ample dose of love.
 
 ## Project Overview
